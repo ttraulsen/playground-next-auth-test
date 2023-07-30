@@ -1,13 +1,12 @@
-# Async Node.js Playground
+# next-auth test playground
 
-This repository plays with async configuration of node. The goal is to show how
-to add a specific header (correlation-id) to all log output and subsequent
-requests. This way you can easily find all log entries of all services. You can
-do this manually but it is easier to add these in a central middleware to remove
-clutter, clean up interfaces and prevent that it will be forgotten in some
-places.
+This is just a little playground to fool around with next-auth. It will require
+to run some oauth server (e.g. keycloak) additionally. The goal is to use roles
+within some jwt to control available functions.
 
-It uses the following dependencies:
+## how to run
 
-- winston.js
-- axios
+1. have some keycloak running
+2. `yarn install`
+3. update the configuration URL
+4. `yarn run dev`
